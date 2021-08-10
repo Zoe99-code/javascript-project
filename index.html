@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Point Of Sale System</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+
+ <div id="id01" class="modal">
+   <span onclick="document.getElementById('id01').style.display='none'"
+ class="close" title="Close Modal">&times;</span>
+ 
+   <form class="modal-content animate" action="/action_page.php">
+     <div class="img-container">
+       <img src="" alt="" class="">
+     </div>
+
+     <label for="full-name"><b>Full Name</b></label>
+     <input type="text" placeholder="Enter Full Name" name="full-name" required>
+
+     <label for="address"><b>Address</b></label>
+     <input type="text" placeholder="Enter Address" name="address" required>
+ 
+       <label for="email"><b>Email</b></label>
+       <input type="text" placeholder="Enter Email" name="email" required>
+
+       <label for="contact-number"><b>Contact Number</b></label>
+       <input type="text" placeholder="Enter Contact Number" name="contact-number" required>
+
+       <label for="username"><b>Username</b></label>
+       <input type="text" placeholder="Enter Username" name="username" required>
+ 
+       <label for="password"><b>Password</b></label>
+       <input type="password" placeholder="Enter Password" name="password" required>
+ 
+       <button type="submit">Register</button>
+       <label>
+         <input type="checkbox" checked="checked" name="remember"> Remember User
+       </label>
+
+       <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbutton">Cancel</button>
+        <span class="password">Forgot <a href="#">Password?</a></span>
+      </div>
+
+     </div>
+   </form>
+ </div> 
+
+    <form action="action_page.php" method="post">
+        <div class="img-container">
+          <img src="" alt="" class="">
+        </div>
+      
+        <div class="container">
+          <label for="username"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="username" required>
+      
+          <label for="password"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="password" required>
+
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" class="cancelbutton">Cancel</button>
+  
+            <span class="password">Forgot <a href="#">Password?</a></span>
+
+            <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+        </div>
+      </form> 
+
+</body>
+</html>
