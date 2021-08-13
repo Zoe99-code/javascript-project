@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet"> 
+</head>
+<body>
+        
+<nav class="navbar navbar-inverse bg-inverse fixed-top bg-faded">
+    <div class="row">
+        <div class="col">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button><button class="clear-cart btn btn-danger">Clear Cart</button></div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="card" style="width: 30rem;">
+  <img class="card-img-top" src="./images/rings.png" alt="Card image">
+  <div class="card-block">
+    <h4 class="card-title"></h4>
+    <p class="card-text">Price: R500</p>
+    <a href="#" data-name="rings" data-price="500" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 30rem;">
+  <img class="card-img-top" src="./images/necklaces.jpg" alt="Card image">
+  <div class="card-block">
+    <h4 class="card-title"></h4>
+    <p class="card-text">Price: R1000</p>
+    <a href="#" data-name="necklaces" data-price="1000" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+          <div class="col">
+            <div class="card" style="width: 30rem;">
+      <img class="card-img-top" src="./images/earrings.jpg" alt="Card image">
+      <div class="card-block">
+        <h4 class="card-title"></h4>
+        <p class="card-text">Price: R300</p>
+        <a href="#" data-name="earrings" data-price="300" class="add-to-cart btn btn-primary">Add to cart</a>
+      </div>
+    </div>
+          <div class="col">
+            <div class="card" style="width: 30rem;">
+      <img class="card-img-top" src="./images/watch.jpg" alt="Card image">
+      <div class="card-block">
+        <h4 class="card-title"></h4>
+        <p class="card-text">Price: R1500</p>
+        <a href="#" data-name="watch" data-price="1500" class="add-to-cart btn btn-primary">Add to cart</a>
+      </div>
+    </div>
+<div class="col">
+        <div class="card" style="width: 30rem;">
+  <img class="card-img-top" src="./images/brooch.jpg" alt="Card image">
+  <div class="card-block">
+    <h4 class="card-title"></h4>
+    <p class="card-text">Price: R300</p>
+    <a href="#" data-name="brooch" data-price="300" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+    </div>
+</div>
+
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="show-cart table">
+          
+        </table>
+        <div>Total price: R<span class="total-cart"></span></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Order now</button>
+      </div>
+    </div>
+  </div>
+</div> 
+		<script src="./javascript.js"></script>
+</body>
+</html>

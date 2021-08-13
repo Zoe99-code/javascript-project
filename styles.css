@@ -2,10 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Berkshire Swash', cursive;
 }
 
  form {
     border: 5px solid #f1f1f1;
+  }
+  
+  body {
+    padding-top: 80px;
   }
   
   input[type=text], input[type=password] {
@@ -31,6 +36,20 @@
     color: tan;
   }
   
+  .login-button {
+    background-color: olive;
+    color: black;
+    padding: 15px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+
+.login-button:hover {
+  color: tan;
+}
+
   .cancelbutton {
     width: auto;
     padding: 15px 20px;
@@ -51,16 +70,7 @@
     padding: 20px;
   }
   
-  span.password {
-    float: right;
-    padding-top: 16px;
-  }
-  
   @media screen and (max-width: 300px) {
-    span.password {
-      display: block;
-      float: none;
-    }
     .cancelbutton {
       width: 100%;
     }
@@ -116,3 +126,16 @@
     from {transform: scale(0)}
     to {transform: scale(1)}
   } 
+
+  .show-cart li {
+    display: flex;
+  }
+  .card {
+    margin-bottom: 20px;
+  }
+  .card-img-top {
+    width: 200px;
+    height: 200px;
+    align-self: center;
+  }
+  

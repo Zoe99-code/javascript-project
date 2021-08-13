@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Point Of Sale System</title>
+    <title>Aurum</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet"> 
 </head>
 <body>
 
@@ -12,10 +15,7 @@
    <span onclick="document.getElementById('id01').style.display='none'"
  class="close" title="Close Modal">&times;</span>
  
-   <form class="modal-content animate" action="/action_page.php">
-     <div class="img-container">
-       <img src="" alt="" class="">
-     </div>
+   <form class="modal-content animate" action="https://guarded-waters-62882.herokuapp.com/user-registration/" method="POST" id="form">
 
      <label for="full-name"><b>Full Name</b></label>
      <input type="text" placeholder="Enter Full Name" name="full-name" required>
@@ -36,23 +36,20 @@
        <input type="password" placeholder="Enter Password" name="password" required>
  
        <button type="submit">Register</button>
+
        <label>
          <input type="checkbox" checked="checked" name="remember"> Remember User
        </label>
 
        <div class="container" style="background-color:#f1f1f1">
         <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbutton">Cancel</button>
-        <span class="password">Forgot <a href="#">Password?</a></span>
       </div>
 
      </div>
    </form>
  </div> 
 
-    <form action="action_page.php" method="post">
-        <div class="img-container">
-          <img src="" alt="" class="">
-        </div>
+    <form action="action_page.php" method="POST">
       
         <div class="container">
           <label for="username"><b>Username</b></label>
@@ -61,15 +58,20 @@
           <label for="password"><b>Password</b></label>
           <input type="password" placeholder="Enter Password" name="password" required>
 
-          <div class="container" style="background-color:#f1f1f1">
-            <button type="button" class="cancelbutton">Cancel</button>
-  
-            <span class="password">Forgot <a href="#">Password?</a></span>
+          <div class="container" style="background-color:#f1f1f1"></div>
 
-            <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+            <a
+                href="./product.html"
+                target="_blank"
+                class="login-button"
+                >Login</a>
+
+            <button onclick="document.getElementById('id01').style.display='block'">Register</button>
 
         </div>
       </form> 
+
+      <script src="./javascript.js"></script>
 
 </body>
 </html>
