@@ -44,7 +44,7 @@ form.addEventListener("submit", submitForm);
 
 function submitForm(event) {
     event.preventDefault();
-    window.location.href = './login.html'
+    window.location.href = './index.html'
 }
 
 const baseURL = "https://stormy-ocean-63026.herokuapp.com/show-products";
